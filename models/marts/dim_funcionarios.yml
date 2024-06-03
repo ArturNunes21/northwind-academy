@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_funcionarios
+    description: >
+     Tabela dimensão dos funcionarios da Northwind. Tem categorização 
+     para produtos descontinuados na coluna is_discontinuado.
+    columns:
+      - name: PK_FUNCIONARIO
+        description: Chave primária da dimensão funcionarios
+        tests:
+          - unique
+          - not_null 
+      
