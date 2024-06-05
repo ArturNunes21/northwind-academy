@@ -1,6 +1,6 @@
-with
+WITH
     fonte_ordens as (
-        select
+        SELECT
             cast(id as int) pk_pedido
             , cast(employeeid as int) as fk_funcionario
             , cast(customerid as string) as fk_cliente
@@ -13,8 +13,8 @@ with
             , cast(shipcountry as string) as pais_destinatario
             , cast(shippeddate as date) as data_do_envio
             , cast(requireddate as date) as data_requerida_entrega
-        from {{ source('erp', '_order_') }}
+        FROM {{ source('erp', '_order_') }}
     )
 
-select *
-from fonte_ordens
+SELECT *
+from fonte_ordens
