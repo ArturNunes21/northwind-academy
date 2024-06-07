@@ -21,3 +21,4 @@ sources:
                 - unique
                 - not_null
       - name: employee
+      - name: customer
