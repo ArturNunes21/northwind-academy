@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: >
+     Tabela dimensão dos clientes da Northwind. Tem categorização 
+     de valor total de compras, quantidade de compras e valor médio por
+    columns: 
+      - name: PK_CLIENTE
+        description: Chave primaria da tabela
+        tests:
+          - unique
+          - not_null
+      - name: NM_EMPRESA_CLIENTE
+        description: Nome da empresa
+        tests:
+          - unique
+          - not_null
+          
