@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_transportadoras
+    description: >
+     Tabela dimensão das transportadoras da Northwind. Tem categorização 
+     para quantidade de entregas, valor total de frete, e valor médio de 
+     frete por entrega
+    columns: 
+      - name: PK_TRANSPORTADORA
+        description: Chave primaria da tabela 
+        tests:
+          - unique
+          - not_null
